@@ -589,7 +589,7 @@ section,
   }
 
   .hero img {
-    transform: scale(0.9); /* Scale down the image to 70% of its size */
+    transform: scale(1); /* Scale down the image to 70% of its size */
     left: -25%; /* Adjust the image position to push it slightly to the left */
   }
 
