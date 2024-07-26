@@ -528,6 +528,7 @@ section,
 
 .hero img {
   position: absolute;
+  margin-left: 1.5%;
   inset: 0;
   height: 100%;
  
