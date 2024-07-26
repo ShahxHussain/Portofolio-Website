@@ -528,7 +528,7 @@ section,
 .hero img {
   position: absolute;
   inset: 0;
-  margin-right: 25%;
+  margin-right: 10%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
@@ -543,7 +543,7 @@ section,
 }
 
 .hero .container {
-  position: absolute;
+  position: relative;
   margin-left: 40%;
   z-index: 3;
 }
