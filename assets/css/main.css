@@ -523,15 +523,17 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden; /* Ensures the image doesn't overflow */
 }
 
 .hero img {
   position: absolute;
   inset: 0;
-  margin-right: 10%;
   height: 100%;
+ 
   object-fit: cover;
   z-index: 1;
+  transform: scale(1.1); /* Slightly zooms out the image */
 }
 
 .hero:before {
@@ -544,7 +546,7 @@ section,
 
 .hero .container {
   position: relative;
-  margin-left: 40%;
+  text-align: center; /* Centers text for better mobile appearance */
   z-index: 3;
 }
 
@@ -582,6 +584,14 @@ section,
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 40px 0; /* Adjust padding for mobile */
+  }
+
+  .hero img {
+    transform: scale(1); /* Adjust zoom for mobile if needed */
+  }
+
   .hero h2 {
     font-size: 32px;
   }
@@ -589,36 +599,11 @@ section,
   .hero p {
     font-size: 20px;
   }
-}
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
-.about .content h2 {
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.about .content ul strong {
-  margin-right: 10px;
-}
-
-.about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: var(--accent-color);
-  line-height: 0;
+  .hero .container {
+    margin-left: 0; /* Center the content on mobile */
+    margin-right: 0; /* Remove margin for better centering */
+  }
 }
 
 /*--------------------------------------------------------------
